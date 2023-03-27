@@ -13,6 +13,7 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "arrow-parens": [2, "always"],
-    "quotes": [2, "single"]
+    "quotes": [2, "single"],
+    "import/prefer-default-export": "off"
   }
 }
