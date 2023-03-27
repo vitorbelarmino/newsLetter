@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model forms_answers {
+  id       BigInt      @id @default(autoincrement())
+  name     String
+  email    String
+  cpf      String
+  phone    String
+  created_at DateTime @default(now())
+}
