@@ -35,7 +35,7 @@ $ npm install
 
 # renomeie o arquivo .env.example para .env
 
-# Suba o banco de dados com Docker (Não precisa caso queira usar o Docker)
+# Suba o banco de dados com Docker
 $ npm run db:up
 
 # Execute a aplicação
