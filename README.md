@@ -38,6 +38,9 @@ $ npm install
 # Suba o banco de dados com Docker
 $ npm run db:up
 
+# Popular o banco de dados
+$ npx prisma db seed
+
 # Execute a aplicação
 $ npm start
 
