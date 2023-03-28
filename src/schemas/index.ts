@@ -20,6 +20,16 @@ const mensageSchema = {
     'string.base': 'telefone deve ser uma string',
     'string.length': 'telefone deve ter 12 caracteres',
   },
+  initialDate: {
+    'any.required': 'Por vafor, informe a data inicial',
+    'string.base': 'data inicial deve ser uma string',
+    'string.pattern.base': 'data inicial deve estar no formato yyyy-mm-dd',
+  },
+  finalDate: {
+    'any.required': 'Por vafor, informe a data final',
+    'string.base': 'data final deve ser uma string',
+    'string.pattern.base': 'data final deve estar no formato yyyy-mm-dd',
+  },
 };
 
 const registerSchema = Joi.object({
@@ -29,4 +39,9 @@ const registerSchema = Joi.object({
   phone: Joi.string().length(12).required().messages(mensageSchema.phone),
 });
 
-export { registerSchema };
+const reportSchema = Joi.object({
+  initialDate: Joi.string().regex(/^\d{4}-\d{2}-\d{2}$/).required().messages(mensageSchema.initialDate),
+  finalDate: Joi.string().regex(/^\d{4}-\d{2}-\d{2}$/).required().messages(mensageSchema.finalDate),
+});
+
+export { registerSchema, reportSchema };
