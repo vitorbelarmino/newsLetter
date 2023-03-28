@@ -35,14 +35,14 @@ $ npm install
 
 # renomeie o arquivo .env.example para .env
 
+# Suba o banco de dados com Docker (Não precisa caso queira usar o Docker)
+$ npm run db:up
+
 # Execute a aplicação
 $ npm start
 
 # O App inciará na porta:3001 - acesse http://localhost:3001 
 ```
-
-## ⬇️ Banco de Dados
-
 
 > Github: https://github.com/vitorbelarmino
 
