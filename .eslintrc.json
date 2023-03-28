@@ -17,6 +17,7 @@
     "import/prefer-default-export": "off",
     "no-unused-vars": "off",
     "import/no-unresolved": "error",
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
     "import/extensions": [
       "error",
       "ignorePackages",
