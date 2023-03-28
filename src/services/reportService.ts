@@ -9,6 +9,9 @@ const reportService = async (data: Idate) => {
         lte: new Date(data.finalDate),
       },
     },
+    orderBy: {
+      created_at: 'asc',
+    },
   });
   return report;
 };
