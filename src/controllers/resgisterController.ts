@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
-import prisma from '../../prisma/index';
+import { registerService } from '../services/registerService';
 
 const registerControler = async (req: Request, res: Response) => {
   const userInfo = req.body;
-  const newUser = await prisma.forms_answers.create({ data: userInfo });
+  const newUser = await registerService(userInfo);
   res.status(201).send(newUser);
 };
 
