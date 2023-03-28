@@ -16,7 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 -  **[DotENV](https://github.com/motdotla/dotenv)**
 -  **[Docker](https://www.docker.com/)**
 -  **[JOI](https://joi.dev/)**
--  **[Dodemon](https://nodemon.io/)**
+-  **[Nodemon](https://nodemon.io/)**
 -  **[Eslint](https://eslint.org/)**
 </br>
 
